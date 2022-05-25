@@ -1,19 +1,36 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Secured Settings App designed as a Single page Application (SPA) which provides a rich experience to the customer,
+the interaction with the web navigation dynamically rewrites the page
+and fetch new contents from the web server seamlessly. This will provide enterprise level app experience to the end user.
+This app contains various modules providing user accessibility to the customers.
+Customers can configure the module settings rapidly by negating the need of full page reloads.
+Each module contains more than one user preference or configurations and these configurations are mutable.
+Modified changes reflect in the settings page effortlessly by the action of RESTful API's.
 
-A single page Secured Settings App of customer for Enterprise cloud Product.
-Customers can able to configure more than one module in the settings page.
-Each module contains more than one user preference or configurations.
+## Example
+
+Here is an example of the settings page, which represents the configuration of the public-profile module is as shown below : 
 
 ![Public profile settings](doc/assets/settings_app1.jpg)
 
 
-
 # API Guide
 
-### Add new settings 
+REST APIs (Representational State Transfer) primarily use HTTP requests to do the following:
+
+GET – Retrieve the resource.
+
+PUT/PATCH – Update resource.
+
+POST – Create a resource.
+
+DELETE – Delete resource.
+
+### Add new settings
+
+To create new settings module in the settings page, please use the curl command with valid parameters and values as shown below:
+
 ```bash
 Route: settings.json
 Method: POST
@@ -31,6 +48,9 @@ curl --location --request POST 'http://localhost:3000/settings.json' \
 ```
 
 ### Update settings
+
+To modify the existing settings module in the settings page, we use the curl command with modified value as shown below: 
+
 ```bash
 Route: settings/{settings_app_name}.json
 Method: PUT
@@ -49,6 +69,8 @@ curl --location --request PUT 'http://localhost:3000/settings/security-log-event
 
 ### Delete settings
 
+To delete the settings module, we use the curl command as shown below:
+
 ```bash
 Route: settings/{settings_app_name}.json
 Method: DELETE
@@ -60,6 +82,8 @@ curl --location --request DELETE 'http://localhost:3000/settings/security-log-ev
 ```
 
 ### Get settings for public-profile
+
+To display the public-profile module under the settings page, run the following curl command in a single line. 
 
 ```bash
 Route: settings/public-profile.json
@@ -82,6 +106,8 @@ Response:
 
 ### Get settings for Account
 
+To display the Account module under the settings page, run the following curl command in a single line.
+
 ```bash
 Route: settings/account.json
 Method: GET
@@ -102,6 +128,9 @@ Response:
 
 
 ### Get settings for Appearance
+
+To display the Appearance module under the settings page, run the following curl command in a single line.
+
 
 ```bash
 Route: settings/appearance.json
@@ -124,6 +153,9 @@ Response:
 
 ### Get settings for Accessibility
 
+To display the Accessibility module under the settings page, run the following curl command in a single line.
+
+
 ```bash
 Route: settings/accessibility.json
 Method: GET
@@ -144,6 +176,9 @@ Response:
 
 
 ### Get settings for Notifications
+
+To display the Notifications module under the settings page, run the following curl command in a single line.
+
 
 ```bash
 Route: settings/notifications.json
@@ -166,6 +201,8 @@ Response:
 
 ### Get settings for Billing and plans
 
+To display the Billing-and-plans module under the settings page, run the following curl command in a single line.
+
 ```bash
 Route: settings/billing-and-plans.json
 Method: GET
@@ -185,8 +222,9 @@ Response:
 ![Public profile settings](doc/assets/settings_app7.png)
 
 
-
 ### Get settings for Emails
+
+To display the Emails module under the settings page, run the following curl command in a single line.
 
 ```bash
 Route: settings/emails.json
@@ -209,6 +247,8 @@ Response:
 
 ### Get settings for Password and authentication
 
+To display the Password-and-authentication module under the settings page, run the following curl command in a single line.
+
 ```bash
 Route: settings/password-and-authentication.json
 Method: GET
@@ -229,6 +269,8 @@ Response:
 
 
 ### Get settings for SSH and GPG keys
+
+To display the SSH-and-GPG-keys module under the settings page, run the following curl command in a single line.
 
 ```bash
 Route: settings/ssh-and-gpg-keys.json
@@ -251,6 +293,8 @@ Response:
 
 ### Get settings for Organizations
 
+To display the Organizations module under the settings page, run the following curl command in a single line.
+
 ```bash
 Route: settings/organizations.json
 Method: GET
@@ -271,6 +315,8 @@ Response:
 
 
 ### Get settings for Repositories
+
+To display the Repositories module under the settings page, run the following curl command in a single line.
 
 ```bash
 Route: settings/repositories.json
@@ -293,6 +339,8 @@ Response:
 
 ### Get settings for Packages
 
+To display the Packages module under the settings page, run the following curl command in a single line.
+
 ```bash
 Route: settings/packages.json
 Method: GET
@@ -313,6 +361,8 @@ Response:
 
 
 ### Get settings for Pages
+
+To display the Pages module under the settings page, run the following curl command in a single line.
 
 ```bash
 Route: settings/pages.json
@@ -335,6 +385,8 @@ Response:
 
 ### Get settings for Saved replies
 
+To display the Saved-replies module under the settings page, run the following curl command in a single line.
+
 ```bash
 Route: settings/saved-replies.json
 Method: GET
@@ -355,6 +407,8 @@ Response:
 
 
 ### Get settings for Code security and analysis
+
+To display the Code-security-and-analysis module under the settings page, run the following curl command in a single line.
 
 ```bash
 Route: settings/code-security-and-analysis.json
@@ -377,6 +431,8 @@ Response:
 
 ### Get settings for Applications
 
+To display the Applications module under the settings page, run the following curl command in a single line.
+
 ```bash
 Route: settings/applications.json
 Method: GET
@@ -397,6 +453,8 @@ Response:
 
 
 ### Get settings for Scheduled reminders
+
+To display the Scheduled-reminders module under the settings page, run the following curl command in a single line.
 
 ```bash
 Route: settings/scheduled-reminders.json
@@ -419,6 +477,8 @@ Response:
 
 ### Get settings for Security log
 
+To display the Security-log module under the settings page, run the following curl command in a single line.
+
 ```bash
 Route: settings/security-log.json
 Method: GET
@@ -440,6 +500,8 @@ Response:
 
 ### Get settings for Sponsorship log
 
+To display the Sponsorship-log module under the settings page, run the following curl command in a single line.
+
 ```bash
 Route: settings/sponsorship-log.json
 Method: GET
@@ -460,6 +522,8 @@ Response:
 
 
 ### Get settings for Developer settings
+
+To display the Developer-settings module under the settings page, run the following curl command in a single line.
 
 ```bash
 Route: settings/developer-settings.json
