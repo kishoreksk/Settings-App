@@ -1,0 +1,11 @@
+<div id="<%= dom_id setting %>">
+  <span><%= link_to edit_setting_path(setting), data: {'turbo-frame': 'edit_setting'}, class: "w-full flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600" do %>
+    <span>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-accessibility">
+        <path fill-rule="evenodd" d="<%= setting.icon %>"></path>
+      </svg>
+    </span>
+    <span><%= setting.name.camelize %></span>
+    <% end %>
+  </span>
+</div>
