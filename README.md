@@ -1,4 +1,4 @@
-# README
+# Settings App
 
 The Secured Settings App designed as a Single page Application (SPA) which provides a rich experience to the customer,
 the interaction with the web navigation dynamically rewrites the page
